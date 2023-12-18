@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using HandsOnDeck.Classes;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -29,13 +30,14 @@ namespace HandsOnDeck
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            Renderer.GetInstance.Initialize(_graphics);
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(_graphics.GraphicsDevice);
+            Renderer.GetInstance.LoadContent(Content, _spriteBatch);
             // TODO: use this.Content to load your game content here
         }
 
@@ -45,7 +47,7 @@ namespace HandsOnDeck
                 Exit();
 
             // TODO: Add your update logic here
-
+            Renderer.GetInstance.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -54,6 +56,8 @@ namespace HandsOnDeck
             _graphics.GraphicsDevice.SetRenderTarget(RenderTarget);
             GraphicsDevice.Clear(Color.Green);
             Window.AllowUserResizing = true;
+
+            Renderer.GetInstance.Draw();
 
             float outputAspect = Window.ClientBounds.Width / (float)Window.ClientBounds.Height;
             float preferredAspect = ProgramWidth / (float)ProgramHeight;
@@ -75,7 +79,7 @@ namespace HandsOnDeck
 
             _graphics.GraphicsDevice.SetRenderTarget(null);
             _spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.PointClamp);
-            //_spriteBatch.Draw(RenderTarget, dst, Color.White);
+            _spriteBatch.Draw(RenderTarget, dst, Color.White);
             _spriteBatch.End();
             base.Draw(gameTime);
         }
