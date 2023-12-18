@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "i7WX9Emfs/4a+BO0e1siqx6xMzZEvtIYxi6XFWKhWb79ZyEXfihKFCMi13Aie6hiIK99ujPJ0sSvls9xqC9RfQ==",
+  "dgSpecHash": "S6SVuxxQ5CgLDQxGhQi8fqFNBABY7mPXLPj+SAUBTU6Y7LOHUqM2JEHOdCIh4hA8bgsDxwn38bDyt53zpU8nHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gh0stage\\source\\repos\\HandsOnDeck\\HandsOnDeck\\HandsOnDeck.csproj",
   "expectedPackageFiles": [
@@ -124,7 +124,8 @@
     "C:\\Users\\Gh0stage\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
     "C:\\Users\\Gh0stage\\.nuget\\packages\\system.xml.xmldocument\\4.0.1\\system.xml.xmldocument.4.0.1.nupkg.sha512",
     "C:\\Users\\Gh0stage\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
-    "C:\\Users\\Gh0stage\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
+    "C:\\Users\\Gh0stage\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
+    "C:\\Users\\Gh0stage\\.nuget\\packages\\tiledsharp\\1.0.1\\tiledsharp.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

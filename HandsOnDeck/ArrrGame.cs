@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Diagnostics;
 
 namespace HandsOnDeck
 {
@@ -29,7 +30,6 @@ namespace HandsOnDeck
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
             Renderer.GetInstance.Initialize(_graphics);
             base.Initialize();
         }
@@ -38,15 +38,13 @@ namespace HandsOnDeck
         {
             _spriteBatch = new SpriteBatch(_graphics.GraphicsDevice);
             Renderer.GetInstance.LoadContent(Content, _spriteBatch);
-            // TODO: use this.Content to load your game content here
         }
 
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
-            // TODO: Add your update logic here
+            Debug.WriteLine("ArrGame.cs update");
             Renderer.GetInstance.Update(gameTime);
             base.Update(gameTime);
         }

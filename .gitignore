@@ -28,7 +28,7 @@
 *.sbr
 *.sdf
 ../.vs/*
-.vs/
+./.vs/*
 ipch/
 obj/
 [Bb]in
